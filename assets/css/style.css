@@ -209,7 +209,45 @@ header .social-menu a {
 /*=================================
   main styling starts here
 =================================*/
+/*=================================
+  banner section styling starts here
+=================================*/ 
+.banner .wrapper { width: 100%; }
 
+.banner { position: relative; }
+
+.uppercase::first-letter { text-transform: capitalize; }
+
+.banner p { font-size: 13px; }
+
+.banner figure:before {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0; 
+  background-color: rgba(0,0,0,0.5);
+}  
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  text-transform: capitalize;
+  font: bold 45px 'sans-serif';
+  letter-spacing: -2px;
+  margin-bottom: 11px;
+}
+/*=================================
+  banner section styling ends here
+=================================*/ 
 
 
 
@@ -231,7 +269,7 @@ header .social-menu a {
 
 
 
- /*=================================
+/*=================================
   footer styling ends here
 =================================*/ 
 
