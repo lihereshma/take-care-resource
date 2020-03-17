@@ -106,12 +106,102 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+.hamburger { display: none; }
 
+header { padding: 16px 0; }
 
+nav a { 
+  -webkit-transition: 0.5s ease; 
+  -o-transition: 0.5s ease; 
+  transition: 0.5s ease; 
+}
 
+.header-right-menus a { color: #bbc; }
 
+header .social-menu .facebook { padding: 4px 5px 1px; }
 
+.facebook::before { content: "\f09a"; }
 
+.youtube::before { content: "\f16a"; }
+
+.twitter::before { content: "\f099"; }
+
+.language .active-language { color: #000; }
+
+.language { margin-top: 2px; }
+
+header .wrapper {
+  width: 73%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.menu a {
+  color: #000;
+  font-size: 10px;
+  text-transform: uppercase;  
+}
+
+header .social-menu a {
+  padding: 4px 4px 2px;
+  border: 1px solid;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 11px;
+  text-indent: -9999px;  
+  -webkit-transition: 0.5s ease;  
+  -o-transition: 0.5s ease;  
+  transition: 0.5s ease;
+}
+
+.facebook::before, .youtube::before, .twitter::before, .language li:not(:last-child):after {
+  float: right;
+  font-family: FontAwesome;
+  text-indent: 0;
+}
+
+.language a {
+  font-size: 9.9px;
+  text-transform: capitalize; 
+  -webkit-transition: 0.5s ease; 
+  -o-transition: 0.5s ease; 
+  transition: 0.5s ease;
+}
+
+.language li:not(:last-child):after {
+  content: "/";
+  padding: 4px 0 0 4px;
+  color: #bbc;
+  font-size: 12px;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.menu-wrap {
+  width: 42%;
+  padding-top: 12px;
+  margin-right: 18.5%;
+}
+
+.header-right-menus .social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -148,11 +238,12 @@ li {
 /*media query starts*/
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
+  .language a:hover { color: #000; }
 
-
+  nav a:hover, header .social-menu a:hover { color: #5bf; }
 
 }
-  
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
