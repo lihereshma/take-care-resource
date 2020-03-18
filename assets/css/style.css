@@ -363,13 +363,13 @@ h3 {
   display: inline-block; 
 }
 
-.apple::before, .android::before{
+.apple::before, .android::before {
   font-family: 'FontAwesome';
   float: right;
   text-indent: 0;
 }
 
-.apps-links div a{
+.apps-links div a {
   padding: 6px 5% 4px 4%;
   font-size: 17px;  
 }
@@ -404,9 +404,9 @@ footer .wrapper { width: 73%; }
 
 footer .social-menu { width: 30%; }
 
-.footer-top-menus{ padding-bottom: 20px; }
+.footer-top-menus { padding-bottom: 20px; }
 
-footer .footer-menus .active-link {color: #5bf;}
+footer .footer-menus .active-link { color: #5bf; }
 
 .footer-bottom-menus ul li { margin-right: 28px; }
 
