@@ -605,8 +605,6 @@ footer {
 
   .tab-list li a:hover { color: #ccc; }
 
-  .tab-content li:last-of-type span { width: 96%; }
-
   nav a:hover, header .social-menu a:hover , 
   footer .footer-top-menus a:hover, .footer-bottom-menus a:hover { color: #5bf; }
 
@@ -644,7 +642,6 @@ footer {
     -webkit-transition: left 0.5s ease;
     -o-transition: left 0.5s ease;
     transition: left 0.5s ease;
-    display: none;
   }
 
   .show { left: 0; }
