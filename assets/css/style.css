@@ -248,13 +248,143 @@ h2 {
 /*=================================
   banner section styling ends here
 =================================*/ 
+/*=================================
+  resources section styling starts here
+=================================*/ 
+.resources .wrapper { width: 100%; }
 
+.hide { display: none; }
 
+.tab-content li:last-of-type, .tab-content li:last-of-type figure { position: relative; }
 
+.active-tab a { border-bottom: 2px solid #fff; }
 
+.tab-list li:first-of-type { padding-left: 0; }
 
+.apple::before { content: "\f179"; }
 
+.android::before { content: "\f17b"; }
 
+.apps-links div { margin-right: 20%; }
+
+.apps-links { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.load-more { text-align: center; }
+
+.tab-list {
+  padding: 12px 0;
+  margin-bottom: 67px;
+  background-color: #286098;
+  text-align: center;
+}
+
+.tab-list li a {
+  position: relative;
+  color: #fff;
+  font: normal 12px 'sans-serif';
+  text-transform: capitalize;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.tab-list li:not(:last-child):after {
+  content: '|';
+  width: 2px;
+  margin: 0px 20px;
+  color: #fff; 
+}
+
+.tab-content-wrapper { 
+  width: 70%;
+  margin: 0 auto;
+}
+
+.tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.tab-content li {
+  width: 22%;
+  margin-bottom: 52px;
+  position: relative;
+}
+
+h3 {
+  margin: 16px 0;
+  font: bold 13px 'sans-serif';  
+  word-spacing: -2px;
+}
+
+.tab-content li:last-of-type span {
+  width: 97%;
+  padding: 4px 0px 4px 6px;
+  position: absolute;
+  top: 0;
+  background-color: #286098;
+  color: #fff;
+  font: normal 8px 'sans-serif';
+}
+
+.tab-content li p {
+  margin-bottom: 43px;
+  color: #7c7c7c;
+  font: normal 10px 'sans-serif';
+  line-height: 16px; 
+}
+
+.tab-content li a {
+  padding: 10px 10%;
+  border: 2px solid;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  background-color: #49adf2;
+  color: #fff;
+  font: bold 9px 'sans-serif';  
+  text-transform: uppercase;  
+  -webkit-transition: 0.5s ease;  
+  -o-transition: 0.5s ease;  
+  transition: 0.5s ease;
+}
+
+.apple, .android {
+  text-indent: -9999px;
+  display: inline-block; 
+}
+.apple::before, .android::before{
+  font-family: 'FontAwesome';
+  float: right;
+  text-indent: 0;
+}
+
+.apps-links div a{
+  padding: 6px 5% 4px 4%;
+  font-size: 17px;  
+}
+
+.load-more a {
+  padding: 9px 1.7%;
+  border: 2px solid;
+  border-radius: 50px;
+  color: #49adf2;
+  background-color: #fff;  
+  text-transform: uppercase;  
+  -webkit-transition: 0.5s ease;  
+  -o-transition: 0.5s ease;  
+  transition: 0.5s ease;
+}
+/*=================================
+  resources section styling ends here
+=================================*/ 
 /*=================================
   main styling ends here
 =================================*/
@@ -279,6 +409,19 @@ h2 {
   .language a:hover { color: #000; }
 
   nav a:hover, header .social-menu a:hover { color: #5bf; }
+
+  .tab-list li a:hover { color: #ccc; }
+
+  .tab-content li a:hover {
+    border: 2px solid;
+    background-color: #fff;
+    color: #49adf2;
+  }
+
+  .load-more a:hover {
+    background-color: #49adf2;
+    color: #fff;
+  }
 
 }
 
