@@ -414,13 +414,13 @@ h3 {
 
   .tab-content li a:hover {
     border: 2px solid;
-    background-color: #fff;
-    color: #49adf2;
+    background-color: #fff; 
+    color: #49adf2;  
   }
 
   .load-more a:hover {
     background-color: #49adf2;
-    color: #fff;
+    color: #fff;    
   }
 
 }
