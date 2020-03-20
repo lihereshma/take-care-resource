@@ -41,13 +41,13 @@
           <nav class="menu">
             <ul>
               <li>
-                <a href="index.html" title="About" class="active-menu">about</a>
+                <a href="index.html" title="About">about</a>
               </li>
               <li>
                 <a href="#FIXME" title="Films">films</a>
               </li>
               <li>
-                <a href="#FIXME" title="Get Started">get started</a>
+                <a href="#FIXME" title="Get Started" class="active-menu">get started</a>
               </li>
               <li>
                 <a href="#FIXME" title="Events">events</a>
@@ -90,8 +90,13 @@
       <!--banner section start-->
       <section class="banner">      
         <div class="wrapper">
-          <figure>
+          <!-- desktop view image -->
+          <figure class="desktopView">
             <img src="https://via.placeholder.com/1286x200/8a5/000.png?text=Banner" alt="Banner">
+          </figure>
+          <!-- mobile view image -->
+          <figure class="mobileView">
+            <img src="https://via.placeholder.com/1286x600/8a5/000.png?text=Banner" alt="Banner">
           </figure>
           <div class="banner-content">
             <h2>resources</h2>
@@ -108,8 +113,8 @@
         <div class="wrapper">    
           <!--Tabs list start-->
           <ul class="tab-list">
-            <li class="tab active-tab" data-tab="all">
-              <a href="#FIXME" title="All">all</a>            
+            <li class="tab" data-tab="all">
+              <a class="active-tab" href="#FIXME" title="All">all</a>            
             </li>
             <li class="tab" data-tab="mind">
               <a href="#FIXME" title="Mind">mind</a> 
