@@ -106,6 +106,8 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+.no-scroll { overflow: hidden; }
+
 .hamburger { display: none; }
 
 header { padding: 16px 0; }
@@ -123,6 +125,8 @@ header .social-menu .facebook { padding: 4px 5px 1px; }
 .language .active-language { color: #000; }
 
 .language { margin-top: 2px; }
+
+.menu .active-menu { color: #5bf; }
 
 nav a { 
   -webkit-transition: 0.5s ease; 
@@ -211,6 +215,8 @@ header .social-menu a {
 /*=================================
   banner section styling starts here
 =================================*/ 
+.mobileView img { display: none; }
+
 .banner .wrapper { width: 100%; }
 
 .banner { position: relative; }
@@ -254,11 +260,11 @@ h2 {
 
 .resources { padding-bottom: 55px; }
 
+.tab-list .active-tab { border-bottom: 2px solid #fff; }
+
 .hide { display: none; }
 
 .tab-content li:last-of-type, .tab-content li:last-of-type figure { position: relative; }
-
-.active-tab a { border-bottom: 2px solid #fff; }
 
 .tab-list li:first-of-type { padding-left: 0; }
 
@@ -280,6 +286,7 @@ h2 {
 }
 
 .tab-list li a {
+  border-bottom: 2px solid #286098;
   position: relative;
   color: #fff;
   font: normal 12px 'sans-serif';
@@ -307,7 +314,7 @@ h2 {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-evenly;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
@@ -317,6 +324,18 @@ h2 {
   width: 22%;
   margin-bottom: 52px;
   position: relative;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 h3 {
@@ -609,7 +628,7 @@ footer {
   footer .footer-top-menus a:hover, .footer-bottom-menus a:hover { color: #5bf; }
 
   .tab-content li a:hover {
-    border: 2px solid;
+    border: 2px solid #49adf2;
     background-color: #fff; 
     color: #49adf2;  
   }
@@ -618,12 +637,13 @@ footer {
     background-color: #49adf2;
     color: #fff;    
   }
+
 }
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
   /* header responsive styling starts */
-  header .wrapper, .tab-content-wrapper, footer .wrapper { width: 90%; }
+  header .wrapper { width: 90%; }
   
   header {
     position: relative;
@@ -631,28 +651,24 @@ footer {
   }
 
   .menu { 
-    width: 100%;
+    width: 0;
     height: 100vh;
+    padding-top: 10%;
     position: absolute; 
     z-index: 1;
     top: 0;
-    left: 100%;
+    left: 110%;
     background-color: #ccc;
     overflow: hidden;
-    -webkit-transition: left 0.5s ease;
-    -o-transition: left 0.5s ease;
-    transition: left 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
-
-  .show { left: 0; }
 
   .menu ul {
     width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
     text-align: center;
-    transform: translate(-50%, -50%);
   }
 
   .menu li { 
@@ -665,6 +681,11 @@ footer {
     color: #000;
     font: bold 20px sans-serif;
     text-transform: capitalize;
+  }
+
+  .show { 
+    width: 100%;
+    left: 0; 
   }
 
   .hamburger {
@@ -826,7 +847,7 @@ footer {
     margin: 0;
     display: inline-block;
     font-size: 7px;
-    width: 27%;
+    width: 33%;
     text-align: center;
   }
   /* footer section responsive styling starts */
@@ -836,14 +857,16 @@ footer {
 @media only screen and (max-width: 767px) {
   .tab-content li:last-of-type span { width: 98.4%; }
 
-  .mail { width: 34%; }
+  .mail { width: 42%; }
 
   .apps-links div a { padding: 8px 3% 6px; }
 }  
 
 /*media query for 540px starts here*/
 @media only screen and (max-width: 540px) {
-  .banner img { min-height: 170px; }
+  .mobileView img { display: block; }
+
+  .desktopView img { display: none; }
 
   .tab-content li { width: 100%; }
 
@@ -855,7 +878,7 @@ footer {
 
   footer .social-links li { width: 8%; }
 
-  .mail { width: 49%; }
+  .mail { width: 60%; }
 
   .footer-bottom-menus ul li { display: block; }
 
@@ -884,5 +907,7 @@ footer {
 
   footer .social-links li { width: 15%; }
 
-  .mail { width: 77%; }
+  .mail { width: 95%; }
+
+  .tab-list li:not(:last-child):after { margin: 0px 10px; }
 }  
